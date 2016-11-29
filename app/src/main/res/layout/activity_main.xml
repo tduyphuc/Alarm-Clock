@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.phuctdse61834.timernotify.MainActivity">
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/timePicker"
+        android:layout_weight=".1"
+        android:timePickerMode="clock"/>
+
+    <!-- Config layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/timePicker"
+        android:layout_marginTop="@dimen/config_margin_top"
+        android:layout_marginLeft="@dimen/config_margin_left_right"
+        android:layout_marginRight="@dimen/config_margin_left_right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/txt_date_marginBot"
+            android:id="@+id/date_layout">
+            <ImageView
+                android:layout_width="@dimen/text_size_date_picker"
+                android:layout_height="@dimen/text_size_date_picker"
+                android:src="@drawable/ic_date_range_black_36dp"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_day"
+                android:text="@string/Date"
+                android:textSize="@dimen/text_size_date_picker"
+                android:layout_marginLeft="@dimen/txt_date_margin_left"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
+        <!-- Song picker layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/sound_layout"
+            android:layout_marginBottom="@dimen/sound_layout_margin"
+            android:layout_marginTop="@dimen/sound_layout_margin">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sound"
+                    android:textSize="@dimen/text_sound"
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_song"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/text_sound_song"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginRight="@dimen/sound_txt_margin"
+                    android:textColor="@color/colorPrimary"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Volume adjust layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="@dimen/sound_minHeight">
+            <ImageView
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:src="@drawable/ic_volume_up_black_48dp"
+                android:padding="@dimen/icon_padding"/>
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:layout_gravity="center"
+                android:id="@+id/volume_adjust"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/star_btn"
+        android:textColor="@color/btn_text_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_Start"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/btn_padding"
+        android:background="@color/light_grey"
+        android:textSize="@dimen/text_btn_size"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimerNotify</string>
+    <string name="star_btn">Start</string>
+    <string name="cancel_btn">Cancel</string>
+
+    <string name="sound">Sound</string>
+    <string name="Date">Date</string>
+</resources>

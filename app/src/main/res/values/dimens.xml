@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_btn_size">18sp</dimen>
+    <dimen name="btn_padding">16dp</dimen>
+
+    <!-- Layout for config view -->
+    <dimen name="config_margin_top">4dp</dimen>
+    <dimen name="config_margin_left_right">12dp</dimen>
+
+    <!-- for date picker text view -->
+    <dimen name="text_size_date_picker">18sp</dimen>
+    <dimen name="txt_date_marginBot">10dp</dimen>
+    <dimen name="txt_date_margin_left">8dp</dimen>
+
+    <!-- for music choose text view layout-->
+    <dimen name="text_sound">18sp</dimen>
+    <dimen name="text_sound_song">16sp</dimen>
+    <dimen name="sound_minHeight">28dp</dimen>
+    <dimen name="sound_txt_margin">16dp</dimen>
+    <dimen name="sound_layout_margin">8dp</dimen>
+
+    <!-- for volume layout-->
+    <dimen name="icon_padding">8dp</dimen>
+    <dimen name="icon_height">40dp</dimen>
+    <dimen name="volume_minheight">40dp</dimen>
+
+    <!-- for text of list of song-->
+    <dimen name="item_song_txtSize">20sp</dimen>
+    <dimen name="item_song_margin">16dp</dimen>
+</resources>
